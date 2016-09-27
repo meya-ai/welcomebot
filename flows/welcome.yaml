@@ -34,10 +34,12 @@ states:  # <-- a `flow` is a collection of states that run in order
         flow: tutorial  # <-- you can call other flows
         transitions:
             complete: done
+        delay:
+            relative: 5
     done:
         component: meya.text
         properties:
-            text: Try saying "weather", "joke" or "gif".
+            text: ...one more thing. Try saying "weather", "joke" or "gif".
         return: true
 #
 # Meya bot flows are written in YAML: https://en.wikipedia.org/wiki/YAML

@@ -2,8 +2,16 @@
     intent: meya.keyword
     settings:
         keyword: gif
--   flow: greeting
+-   flow: greetings
     intent: meya.greetings
+-   flow: joke
+    intent: meya.keyword
+    settings:
+        keyword: joke
+-   flow: tutorial
+    intent: meya.keyword
+    settings:
+        keyword: tutorial
 -   flow: weather
     intent: meya.keyword
     settings:
@@ -12,11 +20,3 @@
     intent: meya.keyword
     settings:
         keyword: start
--   flow: tutorial
-    intent: meya.keyword
-    settings:
-        keyword: tutorial
--   flow: joke
-    intent: meya.keyword
-    settings:
-        keyword: joke

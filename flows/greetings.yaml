@@ -1,6 +1,6 @@
 # this flow routes the built-in greeting intent to different states
 # based on what the user has said "hi", "how are you?", "help", etc.
-name: greeting
+name: greetings
 intents:
     hi: hi
     how_are_you: how_are_you
