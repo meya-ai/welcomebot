@@ -31,16 +31,16 @@ states:
         properties:
             text: >
                 A Meya bot is made up of three things:
-                1) intents: what triggers a bot response
-                2) flows: the steps that a bot runs through
-                3) components: the code that the bot runs along the way
+                `intents` are what triggers a bot response.
+                `flows` are the steps that a bot runs through.
+                `components` are code that the bot runs along the way.
             suggestions:
                 - Got it
     intent:
         component: meya.text_suggestions
         properties:
             text: >
-                Each flow is triggered by an intent. An intent can be a keyword,
+                Each flow is triggered by an `intent`. An intent can be a keyword,
                 regular expression, or a natural language model. You'll
                 see the "intent" at the top of the flow editor. Click "Edit"
                 to edit the intent.
@@ -50,7 +50,7 @@ states:
         component: meya.text_suggestions
         properties:
             text: >
-                A flow is written in YAML code and defines the steps
+                A `flow` is written in YAML code and defines the steps
                 (called "states") a bot will take in response to an intent.
                 At each state, a component (or another flow) can be invoked.
             suggestions:
@@ -59,7 +59,7 @@ states:
         component: meya.text_suggestions
         properties:
             text: >
-                A component is a unit of code written in Python or Node.js
+                A `component` is a unit of code written in Python or Node.js
                 that does something useful. You can read data from the
                 built-in database, make a call to a web API, perform a 
                 calculation, etc.
@@ -73,14 +73,11 @@ states:
                 pieces should fit together to make a good user experience.
         delay:
             relative: 4
-    docs:
+    complete:
         component: meya.text
         properties:
             text: >
                 Good luck, and remember to check out the docs:
                 http://docs.meya.ai
-        delay:
-            relative: 2
-    complete:
-        component: meya.pass
         return: true
+
