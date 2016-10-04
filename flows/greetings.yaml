@@ -11,18 +11,18 @@ states:
         component: meya.random_text
         properties:
             responses:
-            - "Hey there! \U0001F604"
-            - "Hi! \U0001F604"
-            - "Howdy! \U0001F604"
-            - "Hello! \U0001F604"
+                - "Hey there! \U0001F604"
+                - "Hi! \U0001F604"
+                - "Howdy! \U0001F604"
+                - "Hello! \U0001F604"
         return: true
     how_are_you:
         component: meya.random_text
         properties:
             responses:
-            - "I'm fine, thanks for asking \U0001F604"
-            - Great! How are you?
-            - Super duper. You?
+                - "I'm fine, thanks for asking \U0001F604"
+                - Great! How are you?
+                - Super duper. You?
         return: true
     whats_up:
         component: meya.text
