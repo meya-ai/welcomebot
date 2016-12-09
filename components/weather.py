@@ -3,6 +3,7 @@ import requests
 from meya import Component
 
 
+
 API_URL = (
     "http://api.openweathermap.org/data/2.5/weather"
     "?q={city},{country}&APPID={api_key}"
