@@ -20,3 +20,7 @@
     intent: meya.keyword
     settings:
         keyword: start
+-   flow: ai
+    intent: meya.keyword
+    settings:
+        keyword: ai

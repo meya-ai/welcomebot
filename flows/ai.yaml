@@ -1,0 +1,15 @@
+name: ai
+states:
+    get_city:
+        component: meya.input_string
+        properties:
+            text: What US city?
+            output: city
+    get_weather:
+        component: weather
+
+# A classic Chuck Norris joke.
+name: joke
+states:
+    first:
+        component: ai
