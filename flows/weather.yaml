@@ -1,4 +1,7 @@
-name: weather
+triggers:
+  - type: meya.keyword
+    properties:
+        keyword: weather
 states:
     get_city:
         component: meya.input_string

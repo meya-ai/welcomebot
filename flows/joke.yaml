@@ -1,5 +1,8 @@
 # A classic Chuck Norris joke.
-name: joke
+triggers:
+  - type: meya.keyword
+    properties:
+        keyword: joke
 states:
     first:
         component: norris

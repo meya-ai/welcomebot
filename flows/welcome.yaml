@@ -16,7 +16,10 @@
 # |                                                                         |
 # ---------------------------------------------------------------------------
 #
-name: welcome  # <-- this is the name of flow. It must be unique for your bot
+triggers:
+  - type: meya.keyword
+    properties:
+        keyword: start
 states:  # <-- a `flow` is a collection of states that run in order
     first:
         component: meya.text  # <-- this is a simple built-in component
